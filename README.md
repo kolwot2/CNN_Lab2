@@ -21,9 +21,10 @@
   
   ```outputs = EfficientNetB0(include_top=True, weights=None, classes=NUM_CLASSES)(inputs)```  
   include_top=True - используем классификатор сети EfficientNet-B0.  
-  weights=None - означает, что используем случайное начальное приближение. 
+  weights=None - означает, что используем случайное начальное приближение.  
+  classes=NUM_CLASSES - задает количество классов. В нашем случае 101.
   
-* **Графики обучения представленной нейронной сети**:  
+* **Графики обучения EfficientNetB0 со случайным начальным приближением**:  
    Оранжевая линия: обучение.  
    Синияя линия: валидация.
    * График точности epoch_categorical_accuracy:
