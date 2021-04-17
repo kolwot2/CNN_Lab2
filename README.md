@@ -16,19 +16,6 @@
   * Входные данные (изображение размером 224x224 пикселя): 
   
   ```inputs = tf.keras.Input(shape=(RESIZE_TO, RESIZE_TO, 3)) // 224x224x3```
-  * Сonvolutional 2D слой с параметрами количества фильтров и размера матрицы ядра:
-
-  ```x = tf.keras.layers.Conv2D(filters=8, kernel_size=3)(inputs) // 222x222x8```
-  
-  * Pooling слой 2x2 с методом выбора максимального значения:
-
-  ```x = tf.keras.layers.MaxPool2D()(x) // 111x111x8```
-  
-  * Переход из многомерного тензора в одномерный:
-  
-  ```x = tf.keras.layers.Flatten()(x) // 98568 elements```
-  
-  * Полносвязный слой, в задачу которого входит классификация. Параметрами заданы количество классов и активационная функция.
   
   ```outputs = tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)(x)```
 * **Графики обучения представленной нейронной сети**:  
