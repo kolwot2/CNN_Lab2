@@ -70,6 +70,15 @@
    * График функции потерь epoch_loss:
    <img src="./graphs/after_epoch_loss_maxPool.svg">
    
+* **Графики обучения предобучееной нейронной сети EfficientNet-B0 на базе изображений imagenet (pooling='avg')**:  
+   Оранжевая линия: обучение.  
+   Синияя линия: валидация.
+   * График точности epoch_categorical_accuracy:
+  <img src="./graphs/after_epoch_categorical_accuracy_avgPool.svg">
+  
+   * График функции потерь epoch_loss:
+   <img src="./graphs/after_epoch_loss_avgPool.svg">
+   
 * **Анализ полученных результатов**: Как и в предыдущем случае, наблюдается те же проблемы. Причины остаются теми же. Также наблюдается малое улучшение значений метрики точности в измененной нейронной сети. Одной из причин этого может быть измененная архитектура нейронной сети.   
 ## Ссылки.
 1. https://github.com/AlexanderSoroka/CNN-food-101
