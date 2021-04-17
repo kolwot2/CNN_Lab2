@@ -79,6 +79,12 @@
    * График функции потерь epoch_loss:
    <img src="./graphs/after_epoch_loss_avgPool.svg">
    
-* **Анализ полученных результатов**: Из графиков видно, что 2 предобученные нейронные сети обучаются (точнее их классификаторы). Имеет место переобучение в обоях случаях. В случае с MaxPooling значения метрики точности меньше, чем в случае с AvgPooling. Причнами этого могут быть как сами способы пулинга, так и разные начальные приближения классификаторов. 
+* **Анализ полученных результатов**: Из графиков видно, что 2 предобученные нейронные сети обучаются (точнее их классификаторы). Имеет место переобучение в обоих случаях. В случае с MaxPooling значения метрики точности меньше, чем в случае с AvgPooling. Причнами этого могут быть как сами способы пулинга, так и разные начальные приближения классификаторов. 
 ## Ссылки.
-1. https://github.com/AlexanderSoroka/CNN-food-101
+1. https://towardsdatascience.com/a-comprehensive-hands-on-guide-to-transfer-learning-wi
+2. https://github.com/AlexanderSoroka/CNN-food-101
+3. https://arxiv.org/pdf/1905.11946.pdf
+4. https://www.tensorflow.org/api_docs/python/tf/keras/applications/EfficientNetB0
+5. https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/
+6. https://www.kaggle.com/kmader/food41
+7. https://www.tensorflow.org/tutorials/images/transfer_learning?hl=en
