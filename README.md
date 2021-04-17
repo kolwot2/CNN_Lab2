@@ -15,9 +15,14 @@
 * **Архитектура нейронной сети**:
   * Входные данные (изображение размером 224x224 пикселя): 
   
-  ```inputs = tf.keras.Input(shape=(RESIZE_TO, RESIZE_TO, 3)) // 224x224x3```
+  ```inputs = tf.keras.Input(shape=(RESIZE_TO, RESIZE_TO, 3)) // 224x224x3```  
   
-  ```outputs = tf.keras.layers.Dense(NUM_CLASSES, activation=tf.keras.activations.softmax)(x)```
+  * Сеть EfficientNet-B0 с заданными параматрами: 
+  
+  ```outputs = EfficientNetB0(include_top=True, weights=None, classes=NUM_CLASSES)(inputs)```  
+  include_top=True - используем классификатор сети EfficientNet-B0.  
+  weights=None - означает, что используем случайное начальное приближение. 
+  
 * **Графики обучения представленной нейронной сети**:  
    Оранжевая линия: обучение.  
    Синияя линия: валидация.
